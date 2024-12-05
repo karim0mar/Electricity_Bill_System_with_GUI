@@ -39,7 +39,8 @@ public class Bill {
         return bill_amount;
     }
 
-    public void setAmount() {
+    private void setAmount() {
+        // current time in sec - create time (How much time since bill created)
         long currentTime = Instant.now().getEpochSecond();
         this.bill_amount = currentTime - issueDate;
     }

@@ -1,10 +1,11 @@
 package com.electricity.system.src.models;
 
+// بتاخد داتا الكلاينت الي هنعمل عليه ال operation
+
 public class Operator {
     private int id;
     private String name;
     private String email;
-
     // Constructors
     public Operator() {}
 

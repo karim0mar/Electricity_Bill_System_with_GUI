@@ -9,8 +9,10 @@ import java.util.List;
 
 // this file will read all data (customers , bills ,..) from the json
 // da example 3la el Tariffs
+//ka2no begeb el data mn el database
 public class JsonService {
     static Config config = new Config();
+
     final static String TARIFF_FILE = config.getTariffsPath();
     public static List<Tariff> loadTariffs() throws IOException {
         return List.of(JsonUtil.readJson(TARIFF_FILE, Tariff[].class));
